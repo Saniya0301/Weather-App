@@ -28,7 +28,7 @@ const emojiMap = {
 };
 
 async function checkWeather(city) {
-    const api_key = "a0f2b033834ace66609bd9cdca2fcb6a";
+    const api_key = "api_key";
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}`;
 
     try {
@@ -81,3 +81,4 @@ searchBtn.addEventListener('click', () => {
         checkWeather(inputBox.value);
     }
 });
+
